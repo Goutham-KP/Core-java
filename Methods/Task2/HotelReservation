@@ -1,0 +1,40 @@
+class HotelReservation {
+
+    static String reservationId;
+    static String guestName;
+    static String email;
+    static long phone;
+    static String checkInDate;
+    static String checkOutDate;
+    static String roomType;
+    static double totalAmount;
+
+    public static void createReservationDetails(String resId, String guest, String emailId, long phoneNumber,
+             String checkIn, String checkOut, String room, double amount) {
+				
+		boolean isHotelReservationDone=false;
+				
+        reservationId = resId;
+        guestName = guest;
+        email = emailId;
+        phone = phoneNumber;
+        checkInDate = checkIn;
+        checkOutDate = checkOut;
+        roomType = room;
+        totalAmount = amount;
+		
+		return isHotelReservationDone;
+    }
+
+    public static void getReservationDetails() {
+        System.out.println("Reservation ID: " + reservationId);
+        System.out.println("Guest Name: " + guestName);
+        System.out.println("Email: " + email);
+        System.out.println("Phone: " + phone);
+        System.out.println("Check-In Date: " + checkInDate);
+        System.out.println("Check-Out Date: " + checkOutDate);
+        System.out.println("Room Type: " + roomType);
+        System.out.println("Total Amount: " + totalAmount);
+    }
+
+}
